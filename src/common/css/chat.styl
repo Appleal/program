@@ -1,0 +1,82 @@
+.chat-text-time
+  width 100%
+  height 35px
+  line-height 35px
+  text-align center
+  font-size 12px
+.chat-text-wrapper
+  position relative
+  margin 20px 0
+  width 100%
+  overflow auto
+  .chat-text-content
+    position relative
+    overflow hidden
+  .chat-msg-portrait
+    position absolute
+    top 0px
+    left 0px
+    width 30px
+    height 30px
+    border-radius 50%
+    overflow hidden
+    img
+      width 30px
+      height 30px
+  .chat-msg-content
+    position relative
+    margin-top 5px
+    margin-left 46px
+    padding 0
+    text-align left
+    .chat-msg-content-body
+      padding 6px 10px
+      max-width 70%
+      color #333
+      min-height 21px
+      line-height 1.8
+      font-size 12px
+      word-wrap break-word
+      border-radius 3px
+      text-align left
+      background-color #e6e6e6
+      inline-block-top()
+    &::before
+      content ''
+      display block
+      position absolute
+      top 8px
+      left -8px
+      width 0
+      height 0
+      border-top 6px solid transparent
+      border-right 12px solid #e6e6e6
+      border-bottom 6px solid transparent
+.chat-text-wrapper.slef
+  text-align right
+  .chat-msg-portrait
+    left initial
+    right 0px
+  .chat-msg-content
+    position relative
+    margin-right 46px
+    margin-left 0
+    padding 0
+    text-align right
+    .chat-msg-content-body
+      padding 6px 10px
+      max-width 70%
+      min-height 21px
+      color #333
+      line-height 1.8
+      font-size 12px
+      word-wrap break-word
+      border-radius 3px
+      text-align left
+      background-color #def3fd
+      inline-block-top()
+    &::before
+      left initial
+      right -8px
+      border-left 12px solid #def3fd
+      border-right none
